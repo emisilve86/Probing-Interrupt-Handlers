@@ -2,7 +2,7 @@
 
 ## Description
 
-This Linux kernel module is designed to provide a new service that allows to replace multi-byte NOPs (No-Operation instructions) encountered along the execution trace of any intyerrupt handler with CALLs (function-call instructions) to functions implemented by the user within the module. This is a simple workaround/alternative solution (limited to the code involved in the handling of interrupts) for kernel images compiled without CONFIG_KPROBES, or for those functions that have been black-listed and therefore not-kprobable.
+This Linux kernel module is designed to provide a new service that allows to replace multi-byte NOPs (No-Operation instructions) encountered along the execution trace of any intyerrupt handler with CALLs (function-call instructions) to functions implemented by the user within the module. This is a simple workaround/alternative solution (limited to the code involved in the handling of interrupts) for kernel images compiled without `CONFIG_KPROBES`, or for those functions that have been black-listed and therefore not-kprobable.
 
 The `module` folder contains the source files and headers of the module itself. Within the source file `probing-function.c` you'll find instructions on how to declare your own probing functions specifically implemented for your puroposes.
 
